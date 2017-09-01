@@ -12,7 +12,7 @@ namespace FizzBuzz
         {
             Console.Write("Please Enter Start Integer: ");
             int start = Int16.Parse(Console.ReadLine());
-            Console.Write("Please Enter Start Integer: ");
+            Console.Write("Please Enter End Integer: ");
             int end = Int16.Parse(Console.ReadLine());
 
             if(start >= end)
@@ -20,19 +20,19 @@ namespace FizzBuzz
                 
                 for (int cnt = start; cnt >= end; cnt--)
                 {
-                    if (cnt % 15 == 0)
+                    if (cnt % 15 == 0 && cnt != 0)
                     {
                         Console.WriteLine("FizzBuzz");
                         continue;
                     }
 
-                    if (cnt % 5 == 0)
+                    if (cnt % 5 == 0 && cnt != 0)
                     {
                         Console.WriteLine("Buzz");
                         continue;
                     }
 
-                    if (cnt % 3 == 0)
+                    if (cnt % 3 == 0 && cnt != 0)
                     {
                         Console.WriteLine("Fizz");
                         continue;
@@ -45,19 +45,19 @@ namespace FizzBuzz
             {
                 for (int cnt = start; cnt <= end; cnt++)
                 {
-                    if (cnt % 15 == 0)
+                    if (cnt % 15 == 0 && cnt != 0)
                     {
                         Console.WriteLine("FizzBuzz");
                         continue;
                     }
 
-                    if (cnt % 5 == 0)
+                    if (cnt % 5 == 0 && cnt != 0)
                     {
                         Console.WriteLine("Buzz");
                         continue;
                     }
 
-                    if (cnt % 3 == 0)
+                    if (cnt % 3 == 0 && cnt != 0)
                     {
                         Console.WriteLine("Fizz");
                         continue;
